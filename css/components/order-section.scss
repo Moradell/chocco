@@ -1,0 +1,17 @@
+.order-section {
+  background: url("./../../img/orderbg.png") center center / cover no-repeat;
+
+  &::after {
+    content: url("./../../img/blueberryorder.png");
+    left: 30px;
+    bottom: 50px;
+    position: absolute;
+  }
+
+  &::before {
+    content: url("./../../img/leaforder.png");
+    right: 20px;
+    bottom: 70px;
+    position: absolute;
+  }
+}

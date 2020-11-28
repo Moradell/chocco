@@ -1,0 +1,44 @@
+.button {
+  padding: 21px 43px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 35px;
+  line-height: 1;
+  border: none;
+
+  &--bg--white {
+    background: #fff;
+    color: #365A49;
+
+    &:hover {
+      background: #365A49;
+      color: #fff;
+    }
+  }
+
+  &--bg--green {
+    background: #2E4E3F;
+    color: #fff;
+    margin-right: 22px;
+
+    &:hover {
+      background: #fff;
+      color: #2E4E3F;
+    }
+  }
+
+  &--bg--transparent {
+    background: transparent;
+    color: #497870;
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: none;
+    padding: 0;
+
+    &:hover {
+      color: #2E4E3F;
+    }
+  }
+}

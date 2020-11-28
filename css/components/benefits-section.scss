@@ -1,0 +1,11 @@
+.benefits-section {
+  position: relative;
+  background: url("./../../img/leaf2.png") left top 50% no-repeat;
+
+  &::before {
+    content: url(./../../img/berry.png);
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+  }
+}

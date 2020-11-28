@@ -1,0 +1,49 @@
+.hero {
+  background: url("./../../img/fern.png") right bottom no-repeat;
+  background-color: $blue;
+  color: #fff;
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
+
+  &::before {
+    content: url("./../../img/leaf.png");
+    position: absolute;
+    bottom: -40px;
+    left: 2%;
+  }
+
+  &::after {
+    content: url("./../../img/leafberry.png");
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+  }
+}
+
+.hero__container {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 25px 0 50px;
+  background: url("./../../img/chocolate.png") right center / 50% auto no-repeat;
+}
+
+.hero__title-content {
+  width: 45%;
+  line-height: 1.2;
+}
+
+.hero__main-title {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+
+.hero__slogan {
+  font-size: 21px;
+  margin-bottom: 50px;
+  padding-right: 15%;
+}
