@@ -8,6 +8,10 @@
 .fixed-menu__item {
   margin-bottom: 5px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &--active {
     .fixed-menu__link {
       border-color: #fff;
@@ -22,6 +26,10 @@
   border: 1px solid transparent;
   display: block;
   position: relative;
+
+  &:hover {
+    border-color: #fff;
+  }
 
   &::before {
     content: "";
