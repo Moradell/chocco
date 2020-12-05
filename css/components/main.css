@@ -367,6 +367,7 @@ img {
 @media screen and (max-width: 768px) {
   .section--font--color--green .section-title {
     margin-bottom: 1.5rem;
+    text-align: center;
   }
 }
 
