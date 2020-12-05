@@ -732,6 +732,7 @@ img {
 .order-section {
   background: url("./../../img/orderbg.png") center center/cover no-repeat;
   position: relative;
+  z-index: -5;
 }
 @media screen and (max-width: 768px) {
   .order-section::after, .order-section::before {
