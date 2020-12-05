@@ -3,12 +3,15 @@
 }
 
 .dignity__icon {
-  width: 46px;
-  margin-right: 6px;
+  // width: rem(46px);
+  margin-right: rem(6px);
+  width: 41px;
+  height: 41px;
+  fill: #C6F7FF;
 }
 
 .dignity__text {
-  font-size: 16px;
-  max-width: 85px;
+  font-size: rem(16px);
+  max-width: rem(85px);
   line-height: 1.15;
 }

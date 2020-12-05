@@ -1,0 +1,30 @@
+.socials {
+  display: flex;
+
+  @include phones {
+    margin-bottom: rem(10px);
+  }
+}
+
+.socials__item {
+  margin-right: 14px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  display: block;
+  text-decoration: none;
+}
+
+.socials-icon {
+  width: 20px;
+  height: 20px;
+  fill: #B3B3B3;
+
+  &:hover {
+    fill: #000;
+  }
+}

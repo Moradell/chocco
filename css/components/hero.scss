@@ -3,20 +3,30 @@
   background-color: $blue;
   color: #fff;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   position: relative;
+
+  @include tablets {
+    background-position: right bottom 91%;
+  }
+
+  &::before, &::after {
+    @include tablets {
+      display: none;
+    }
+  }
 
   &::before {
     content: url("./../../img/leaf.png");
     position: absolute;
-    bottom: -40px;
+    bottom: rem(-40px);
     left: 2%;
   }
 
   &::after {
     content: url("./../../img/leafberry.png");
     position: absolute;
-    bottom: -40px;
+    bottom: rem(-40px);
     right: 0;
   }
 }
@@ -26,24 +36,73 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 25px 0 50px;
+  padding: rem(25px) 0 rem(50px);
   background: url("./../../img/chocolate.png") right center / 50% auto no-repeat;
+
+  @include tablets {
+    background: none;
+  }
 }
 
 .hero__title-content {
   width: 45%;
   line-height: 1.2;
+
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::before {
+      content: "";
+      width: rem(325px);
+      height: rem(338px);
+      background: url("./../../img/berrychocco.png") center center / contain no-repeat;
+      margin-bottom: rem(17px);
+    }
+  }
 }
 
 .hero__main-title {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 19px;
+  margin-bottom: rem(19px);
+
+  @include tablets {
+    margin-bottom: 5px;
+  }
+
+  @include phones {
+    line-height: 0.9;
+    font-size: rem(40px);
+    margin-bottom: rem(8px);
+  }
 }
 
 .hero__slogan {
-  font-size: 21px;
-  margin-bottom: 50px;
+  font-size: rem(21px);
+  margin-bottom: rem(50px);
   padding-right: 15%;
+
+  @include tablets {
+    padding: 0 27%;
+    margin-bottom: rem(24px);
+  }
+
+  @include phones {
+    line-height: 1.1;
+    padding: 0 11%;
+    margin-bottom: rem(24px);
+  }
+}
+
+.hero__desc-content {
+  @include tablets {
+    display: none;
+  }
 }

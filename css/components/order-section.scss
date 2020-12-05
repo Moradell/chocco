@@ -1,17 +1,25 @@
 .order-section {
   background: url("./../../img/orderbg.png") center center / cover no-repeat;
+  position: relative;
+  // z-index: -5;
+
+  @include tablets {
+    &::after, &::before {
+      display: none;
+    }
+  }
 
   &::after {
     content: url("./../../img/blueberryorder.png");
-    left: 30px;
-    bottom: 50px;
+    left: rem(30px);
+    bottom: rem(50px);
     position: absolute;
   }
 
   &::before {
     content: url("./../../img/leaforder.png");
-    right: 20px;
-    bottom: 70px;
+    right: rem(20px);
+    bottom: rem(70px);
     position: absolute;
   }
 }

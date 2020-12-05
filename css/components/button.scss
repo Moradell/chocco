@@ -1,12 +1,17 @@
 .button {
-  padding: 21px 43px;
+  padding: rem(21px) rem(43px);
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 800;
-  border-radius: 35px;
+  border-radius: rem(35px);
   line-height: 1;
   border: none;
+
+  @include phones {
+    padding: rem(21px) rem(39px);
+    font-size: rem(19px);
+  }
 
   &--bg--white {
     background: #fff;
@@ -21,7 +26,7 @@
   &--bg--green {
     background: #2E4E3F;
     color: #fff;
-    margin-right: 22px;
+    margin-right: rem(22px);
 
     &:hover {
       background: #fff;
@@ -33,7 +38,7 @@
     background: transparent;
     color: #497870;
     font-weight: normal;
-    font-size: 18px;
+    font-size: rem(18px);
     text-transform: none;
     padding: 0;
 
