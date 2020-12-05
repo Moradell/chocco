@@ -1,6 +1,10 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+//breackpoints
+$tablets: 768px;
+$phones: 480px;
+
 //colors
 $blue: #61C4D9;
 $darkGreen: #365A49;
@@ -12,6 +16,7 @@ $z-fixed-menu: 100;
 //normolize
 @import url(./normalize.css);
 
+@import "media";
 
 //setups
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
@@ -21,6 +26,8 @@ $z-fixed-menu: 100;
 //components
 @import "components/hero";
 @import "components/header.scss";
+@import "components/menu.scss";
+@import "components/hamburger.scss";
 @import "components/dignities.scss";
 @import "components/dignity.scss";
 @import "components/button.scss";
@@ -35,4 +42,7 @@ $z-fixed-menu: 100;
 @import "components/order-section.scss";
 @import "components/form.scss";
 @import "components/radio.scss";
+@import "components/map-section.scss";
+@import "components/footer.scss";
+@import "components/socials.scss";
 @import "components/fixed-menu.scss";
