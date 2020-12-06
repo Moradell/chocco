@@ -691,7 +691,7 @@ img {
   position: relative;
 }
 .interactive-avatar--active {
-  background-color: #365A49;
+  border-color: #365A49;
 }
 .interactive-avatar:hover {
   border-color: #365A49;
