@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chocco</title>
-  <link rel="stylesheet" href="./css/components/main.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <div class="wrapper">
@@ -142,6 +142,68 @@
                 </div>
               </li>
             </ul>
+          </div>
+        </section>
+
+        <section class="section slider-section">
+          <div class="container">
+            <div class="product">
+              <div class="slider-controls">
+                <a href="#" class="slider-btn slider-btn--next">
+                  <svg class="slider-arrow">
+                    <use xlink:href="./img/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+                <a href="#" class="slider-btn slider-btn--prev">
+                  <svg class="slider-arrow">
+                    <use xlink:href="./img/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="product__col">
+                <div class="product__image-wrap">
+                  <img src="./img/choco_cicle.png" alt="Chocolate" class="product__image">
+                </div>
+              </div>
+              <div class="product__col">
+                <div class="product__content">
+                  <div class="product__content-img">
+                    <div class="product__contentn-img-wrapper">
+                      <svg class="product-icon">
+                        <use xlink:href="./img/sprite.svg#chocolate-bar"></use>
+                      </svg>
+                    </div>
+                    <div class="product__content-img-text">
+                      <p>состав</p>
+                    </div>
+                  </div>
+                    <h2 class="product__title">Батончик “Гранола виноград”</h2>
+                  <div class="product__description">
+                    <div class="product__text">
+                      <p>
+                        Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                      </p>
+                    </div>
+                    <div class="product__property">
+                      <div class="product__property-block">
+                        <span class="product__property-block-title">Калорийность</span>
+                        <span class="product__property-block-text">110 ккал</span>
+                      </div>
+                      <div class="product__property-block">
+                        <span class="product__property-block-title">Вес</span>
+                        <span class="product__property-block-text">95 грамм</span>
+                      </div>
+                    </div>
+                    <div class="product__order">
+                      <div class="product__price">
+                        <p>140 ₽</p>
+                      </div>
+                      <a href="#" class="button button--bg--light--green">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -317,11 +379,43 @@
 
       </div>
     </div>
-    <a href="#" class="hamburger">
-      <span class="hamburger__plank"></span>
-      <span class="hamburger__plank"></span>
-      <span class="hamburger__plank"></span>
-    </a>
+
+    <div class="burger" id="burger">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </div>
+    
+    <div class="overlay" id="overlay">
+      <div class="overlay__menu" id="overlay__menu">
+        <nav class="overlay-menu">
+          <ul class="overlay-menu__list">
+            <li class="overlay-menu__item">
+              <a href="#" class="overlay-menu__link">О нас</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a href="#" class="overlay-menu__link">Батончик</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a href="#" class="overlay-menu__link">Команда</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a href="#" class="overlay-menu__link">Меню</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a href="#" class="overlay-menu__link">Отзывы</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a href="#" class="overlay-menu__link">Как мы работаем</a>
+            </li>
+            <li class="overlay-menu__item">
+              <a href="#" class="overlay-menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
     <nav class="fixed-menu">
       <ul class="fixed-menu__list">
         <li class="fixed-menu__item fixed-menu__item--active"><a href="#" class="fixed-menu__link"></a></li>
@@ -335,5 +429,7 @@
         <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
       </ul>
     </nav>
+    
+    <script src="./main.js"></script>
 </body>
 </html>
