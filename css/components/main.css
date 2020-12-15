@@ -147,7 +147,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .hero__main-title {
-    margin-bottom: 5px;
+    margin-bottom: 0.2777777778rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -198,16 +198,16 @@ img {
 
 .phone-icon-header {
   fill: white;
-  width: 14px;
-  height: 14px;
-  margin-right: 6px;
+  width: 0.7777777778rem;
+  height: 0.7777777778rem;
+  margin-right: 0.3333333333rem;
 }
 
 .phone-icon-footer {
-  width: 12px;
-  height: 12px;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
   fill: #497870;
-  margin-right: 7px;
+  margin-right: 0.3888888889rem;
 }
 
 .phone-number__text {
@@ -262,8 +262,8 @@ img {
   display: none;
   top: 2.5%;
   right: 3%;
-  height: 26px;
-  width: 26px;
+  height: 1.4444444444rem;
+  width: 1.4444444444rem;
   cursor: pointer;
   z-index: 15;
   transition: all 0.4s;
@@ -275,8 +275,8 @@ img {
 }
 .burger__line {
   width: 100%;
-  height: 4px;
-  border-radius: 8px;
+  height: 0.2222222222rem;
+  border-radius: 0.4444444444rem;
   position: absolute;
   background-color: #fff;
   top: 0;
@@ -319,8 +319,8 @@ img {
 
 .dignity__icon {
   margin-right: 0.3333333333rem;
-  width: 41px;
-  height: 41px;
+  width: 2.2777777778rem;
+  height: 2.2777777778rem;
   fill: #C6F7FF;
 }
 
@@ -507,8 +507,8 @@ img {
 }
 
 .benefit-icon {
-  width: 68px;
-  height: 68px;
+  width: 3.7777777778rem;
+  height: 3.7777777778rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -538,7 +538,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .headline {
-    margin-bottom: 52px;
+    margin-bottom: 2.8888888889rem;
   }
 }
 
@@ -688,7 +688,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .reviews__title {
-    margin-bottom: 15px;
+    margin-bottom: 0.8333333333rem;
   }
 }
 
@@ -698,7 +698,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .reviews__text {
-    margin-bottom: 10px;
+    margin-bottom: 0.5555555556rem;
   }
 }
 
@@ -816,7 +816,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .form__col {
-    margin-bottom: 8px;
+    margin-bottom: 0.4444444444rem;
   }
   .form__col:last-child {
     margin-bottom: 0;
@@ -893,7 +893,7 @@ img {
 @media screen and (max-width: 480px) {
   .form__controls {
     justify-content: center;
-    margin-bottom: 8px;
+    margin-bottom: 0.4444444444rem;
   }
 }
 
@@ -1000,7 +1000,7 @@ img {
 }
 
 .socials__item {
-  margin-right: 14px;
+  margin-right: 0.7777777778rem;
 }
 .socials__item:last-child {
   margin-right: 0;
@@ -1012,8 +1012,8 @@ img {
 }
 
 .socials-icon {
-  width: 20px;
-  height: 20px;
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
   fill: #B3B3B3;
 }
 .socials-icon:hover {
@@ -1084,7 +1084,7 @@ img {
 }
 
 .overlay-menu__item {
-  margin-bottom: 20px;
+  margin-bottom: 1.1111111111rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1098,7 +1098,7 @@ img {
 .overlay-menu__link {
   text-decoration: none;
   color: #fff;
-  font-size: 36px;
+  font-size: 2rem;
 }
 .overlay-menu__link:hover {
   opacity: 0.7;
@@ -1166,7 +1166,7 @@ img {
 
 .product__col {
   flex: 1;
-  margin-right: 40px;
+  margin-right: 2.2222222222rem;
 }
 .product__col:last-child {
   margin-right: 0;
@@ -1181,15 +1181,20 @@ img {
 }
 
 .product__content-img {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 91px;
-  width: 91px;
+  height: 5.0555555556rem;
+  width: 5.0555555556rem;
   background: #86C3D7;
-  border-radius: 5px;
-  margin-bottom: 23px;
+  border-radius: 0.2777777778rem;
+  margin-bottom: 1.2777777778rem;
+}
+.product__content-img:hover .composition {
+  left: 100%;
+  opacity: 1;
 }
 @media screen and (max-width: 768px) {
   .product__content-img {
@@ -1198,29 +1203,29 @@ img {
 }
 
 .product__content-img-text {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
   color: #fff;
 }
 
 .product-icon {
-  width: 46px;
-  height: 46px;
+  width: 2.5555555556rem;
+  height: 2.5555555556rem;
   fill: #fff;
 }
 
 .product__title {
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: bold;
   color: #292929;
   line-height: 1.2;
-  margin-bottom: 26px;
+  margin-bottom: 1.4444444444rem;
   text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
   .product__title {
-    font-size: 30px;
-    margin-bottom: 17px;
+    font-size: 1.6666666667rem;
+    margin-bottom: 0.9444444444rem;
     text-align: center;
   }
 }
@@ -1240,7 +1245,7 @@ img {
 }
 
 .product__text {
-  margin-bottom: 20px;
+  margin-bottom: 1.1111111111rem;
   line-height: 1.2;
 }
 @media screen and (max-width: 768px) {
@@ -1251,7 +1256,7 @@ img {
 
 .product__property {
   display: flex;
-  margin-bottom: 9px;
+  margin-bottom: 0.5rem;
 }
 @media screen and (max-width: 768px) {
   .product__property {
@@ -1262,7 +1267,7 @@ img {
 .product__property-block {
   display: flex;
   flex-direction: column;
-  margin-right: 46px;
+  margin-right: 2.5555555556rem;
 }
 .product__property-block-text {
   font-weight: bold;
@@ -1283,11 +1288,46 @@ img {
 }
 
 .product__price {
-  font-size: 60px;
+  font-size: 3.3333333333rem;
   font-weight: 300;
   color: #151515;
-  margin-right: 30px;
+  margin-right: 1.6666666667rem;
   white-space: nowrap;
+}
+
+.composition-icon {
+  fill: #000;
+  width: 1.3333333333rem;
+  height: 1.3333333333rem;
+  margin-right: 0.8888888889rem;
+}
+
+.composition {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  left: -555.5rem;
+  width: 15.1666666667rem;
+  height: 19.1111111111rem;
+  background: rgba(213, 213, 213, 0.8);
+  font-size: 0.8888888889rem;
+  color: #000;
+  padding: 1.5555555556rem 1.3888888889rem;
+  border-radius: 0.2777777778rem;
+  transition: opacity 0.3s;
+}
+
+.composition__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5555555556rem;
+}
+.composition__item:last-child {
+  margin-bottom: 0;
+}
+
+.composition__value {
+  margin-left: auto;
 }
 
 .slider-controls {
@@ -1310,11 +1350,11 @@ img {
   }
 }
 .slider-btn--next {
-  right: -22px;
+  right: -1.2222222222rem;
 }
 @media screen and (max-width: 768px) {
   .slider-btn--next {
-    right: 90px;
+    right: 5rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1323,12 +1363,12 @@ img {
   }
 }
 .slider-btn--prev {
-  left: -22px;
+  left: -1.2222222222rem;
   transform: rotate(180deg);
 }
 @media screen and (max-width: 768px) {
   .slider-btn--prev {
-    left: 90px;
+    left: 5rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1338,6 +1378,6 @@ img {
 }
 
 .slider-arrow {
-  width: 24px;
-  height: 40px;
+  width: 1.3333333333rem;
+  height: 2.2222222222rem;
 }
