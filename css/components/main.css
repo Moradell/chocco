@@ -1410,6 +1410,7 @@ img {
   color: #292929;
   margin-bottom: 0.4444444444rem;
   cursor: pointer;
+  outline: none;
   position: relative;
 }
 .team__title::after {
