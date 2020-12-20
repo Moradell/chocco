@@ -339,6 +339,7 @@ img {
   border-radius: 1.9444444444rem;
   line-height: 1;
   border: none;
+  outline: none;
 }
 @media screen and (max-width: 480px) {
   .button {
