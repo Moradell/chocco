@@ -21,8 +21,14 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -75,7 +81,7 @@ img {
   background: url("./../../img/fern.png") right bottom no-repeat;
   background-color: #61C4D9;
   color: #fff;
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   position: relative;
 }
@@ -256,6 +262,9 @@ img {
   text-decoration: none;
   white-space: nowrap;
 }
+.menu__link:hover {
+  text-decoration: underline;
+}
 
 .burger {
   position: fixed;
@@ -393,7 +402,7 @@ img {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
@@ -800,6 +809,7 @@ img {
 .order-section {
   background: url("./../../img/orderbg.png") center center/cover no-repeat;
   position: relative;
+  z-index: -1;
 }
 @media screen and (max-width: 768px) {
   .order-section::after, .order-section::before {
@@ -995,8 +1005,9 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.map-section {
-  background: url("../../img/map.png") center center/cover no-repeat;
+#map {
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
@@ -1004,6 +1015,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff;
+  width: 100%;
 }
 @media screen and (max-width: 480px) {
   .footer {
@@ -1061,6 +1074,15 @@ img {
   top: 20%;
   right: 3%;
   z-index: 100;
+}
+.fixed-menu--black .fixed-menu__item--active .fixed-menu__link {
+  border-color: #000;
+}
+.fixed-menu--black .fixed-menu__link:hover {
+  border-color: #000;
+}
+.fixed-menu--black .fixed-menu__link::before {
+  background: #000;
 }
 @media screen and (max-width: 768px) {
   .fixed-menu {
@@ -1150,44 +1172,21 @@ img {
 }
 
 .slider-section {
-  background: url("./../../img/blueberry_prod.png") right bottom -8% no-repeat, url("./../../img/fon_fern.png") right bottom -50% no-repeat;
   background-color: #F8FAF9;
+  z-index: -1;
   position: relative;
 }
 .slider-section::before {
-  content: url("./../../img/leaf_product2.png");
+  content: url("./../../img/fon_fern.png");
   position: absolute;
-  left: 15%;
-  top: 37%;
-}
-@media screen and (max-width: 768px) {
-  .slider-section::before {
-    left: 18%;
-    top: 22%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .slider-section::before {
-    left: 2%;
-    top: 17%;
-  }
+  right: 0px;
+  bottom: -17%;
 }
 .slider-section::after {
-  content: url("./../../img/leaf_product.png");
+  content: url("./../../img/blueberry_prod.png");
   position: absolute;
-  bottom: 30%;
-  left: 43%;
-}
-@media screen and (max-width: 768px) {
-  .slider-section::after {
-    bottom: 43%;
-    left: 66%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .slider-section::after {
-    bottom: 50%;
-  }
+  right: 0;
+  bottom: -8%;
 }
 
 .product {
@@ -1197,6 +1196,42 @@ img {
 @media screen and (max-width: 768px) {
   .product {
     flex-direction: column;
+  }
+}
+.product::before {
+  content: url("./../../img/leaf_product2.png");
+  position: absolute;
+  left: 2%;
+  top: 27%;
+}
+@media screen and (max-width: 768px) {
+  .product::before {
+    left: 17%;
+    top: 15%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product::before {
+    left: 2%;
+    top: 6%;
+  }
+}
+.product::after {
+  content: url("./../../img/leaf_product.png");
+  position: absolute;
+  bottom: 0%;
+  left: 35%;
+}
+@media screen and (max-width: 768px) {
+  .product::after {
+    bottom: 43%;
+    left: 68%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product::after {
+    bottom: 47%;
+    left: 68%;
   }
 }
 
@@ -1548,4 +1583,206 @@ img {
 .error-modal .modal__content {
   color: red;
   text-align: center;
+}
+
+.products-menu-section {
+  background: url("./../../img/Slider.png") center center/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+.products-menu-section::after {
+  content: url("./../../img/resberry_menu.png");
+  position: absolute;
+  top: -3.6111111111rem;
+  left: 1.9444444444rem;
+}
+
+.products-menu-section__title {
+  font-size: 2.6666666667rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  left: 7%;
+  top: 10%;
+}
+@media screen and (max-width: 480px) {
+  .products-menu-section__title {
+    font-size: 2.2222222222rem;
+  }
+}
+
+.products-menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+.products-menu__item {
+  display: flex;
+}
+
+.products-menu__title {
+  position: relative;
+  width: 5.6666666667rem;
+  text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  .products-menu__title {
+    width: 5rem;
+  }
+}
+
+.products-menu__img {
+  height: 100%;
+}
+
+.products-menu__text {
+  transform: rotate(-90deg) translate(120%);
+  white-space: nowrap;
+  font-size: 2.6666666667rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 480px) {
+  .products-menu__text {
+    font-size: 2.2222222222rem;
+  }
+}
+
+.products-menu__content {
+  background: rgba(51, 53, 55, 0.9);
+  overflow: hidden;
+  width: 0;
+  position: relative;
+  transition: width 0.7s;
+}
+
+.product-menu__container {
+  padding: 1.6666666667rem 4.4444444444rem 2.1111111111rem;
+}
+
+.player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.player.active .player__splash {
+  display: none;
+}
+.player.paused .player__start {
+  width: 0.7777777778rem;
+  height: 0.8888888889rem;
+  border: none;
+}
+.player.paused .player__start::after, .player.paused .player__start::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0.2777777778rem;
+  top: 0;
+  bottom: 0;
+  background: #626262;
+}
+.player.paused .player__start::after {
+  right: 0;
+}
+.player.paused .player__start::before {
+  left: 0;
+}
+
+.player__wrapper {
+  position: relative;
+}
+
+.player__splash {
+  position: absolute;
+  height: 21.7777777778rem;
+  width: 36.5555555556rem;
+  background: url("./../../img/video_splash.png");
+}
+
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.9444444444rem;
+  background: #3e3e3e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.3888888889rem;
+}
+
+.player__start {
+  position: relative;
+  width: 0;
+  height: 0;
+  background: #3e3e3e;
+  border-top: 0.5rem solid transparent;
+  border-left: 0.8888888889rem solid #626262;
+  border-bottom: 0.5rem solid transparent;
+  border-right-width: 0;
+  outline: none;
+}
+
+.player__playback {
+  position: relative;
+  height: 0.8888888889rem;
+  width: 24.7777777778rem;
+}
+.player__playback::before {
+  content: "";
+  height: 0.2222222222rem;
+  background: #626262;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: block;
+  transform: translateY(-50%);
+}
+
+.player__playback-button {
+  position: absolute;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  background: #626262;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+
+.player-section {
+  position: relative;
+}
+.player-section::before {
+  content: url("./../../img/blackberry_how.png");
+  position: absolute;
+  right: 0;
+  bottom: -14%;
+}
+
+.player-section__container {
+  height: 21.7777777778rem;
+  width: 36.5555555556rem;
+  margin: 0 auto;
+  position: relative;
+}
+.player-section__container::before {
+  content: url("./../../img/leaf_how.png");
+  position: absolute;
+  bottom: -12%;
+  left: -20%;
+}
+.player-section__container::after {
+  content: url("./../../img/blur_leaf_how.png");
+  position: absolute;
+  top: -20%;
+  right: -18%;
 }
