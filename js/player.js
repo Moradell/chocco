@@ -25,6 +25,19 @@ let eventsInit = () => {
     player.seekTo(newPlaybackPositionSec);
   });
 
+  $(".player__volum").click(e => {
+    const volumeBar = $(e.currentTarget);
+    const volumeClickedPosition = e.originalEvent.layerX;
+    const newVolumButtonPositionPercent = (volumeClickedPosition / volumeBar.width()) * 100;
+  
+    $(".player__volum-button").css({
+      left: `${newVolumButtonPositionPercent}%`
+    });
+  
+    player.setVolume(newVolumButtonPositionPercent);
+  })
+  
+
   $(".player__splash").click( e => {
     player.playVideo();
   })
@@ -41,7 +54,7 @@ const formatTime = timeSec => {
   }
 
   return `${minutes}:${seconds}`;
-}
+};
 
 const onPlayerReady = () => {
   let interval;
