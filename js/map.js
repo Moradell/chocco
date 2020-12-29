@@ -8,7 +8,7 @@ const init = () => {
  });
 
  const coords = [
-   [43.121738, 131.896717],
+   [43.115445, 131.885459],
    [43.112089, 131.874944],
    [43.113667, 131.892782],
    [43.119134, 131.878711]
@@ -17,7 +17,7 @@ const init = () => {
  const myCollection = new ymaps.GeoObjectCollection({}, {
    draggable: false,
    iconLayout: 'default#image',
-   iconImageHref: "./../img/marker.svg",
+   iconImageHref: "../img/marker.svg",
    iconImageSize: [46, 57],
    iconImageOffset: [-25, -52]
  });
