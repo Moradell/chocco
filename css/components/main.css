@@ -1696,11 +1696,36 @@ img {
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  #yt-player {
+    width: 33rem;
+    height: 19.5555555556rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #yt-player {
+    width: 21.8888888889rem;
+    height: 12.9444444444rem;
+  }
+}
+
 .player__splash {
   position: absolute;
   height: 21.7777777778rem;
   width: 36.5555555556rem;
-  background: url("./../../img/video_splash.png");
+  background: url("./../../img/video_splash.png") center center/cover no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .player__splash {
+    width: 33rem;
+    height: 19.5555555556rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player__splash {
+    width: 21.8888888889rem;
+    height: 12.9444444444rem;
+  }
 }
 
 .player__controls {
@@ -1714,6 +1739,11 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 0 1.3888888889rem;
+}
+@media screen and (max-width: 480px) {
+  .player__controls {
+    padding: 0 0.2777777778rem;
+  }
 }
 
 .player__start {
@@ -1732,6 +1762,16 @@ img {
   position: relative;
   height: 0.8888888889rem;
   width: 24.7777777778rem;
+}
+@media screen and (max-width: 768px) {
+  .player__playback {
+    width: 22.2222222222rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player__playback {
+    width: 14.7222222222rem;
+  }
 }
 .player__playback::before {
   content: "";
@@ -1758,6 +1798,12 @@ img {
   left: 0;
 }
 
+@media screen and (max-width: 480px) {
+  .player__duration {
+    font-size: 0.7777777778rem;
+  }
+}
+
 .player-section {
   position: relative;
 }
@@ -1773,6 +1819,18 @@ img {
   width: 36.5555555556rem;
   margin: 0 auto;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .player-section__container {
+    width: 33rem;
+    height: 19.5555555556rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player-section__container {
+    width: 21.8888888889rem;
+    height: 12.9444444444rem;
+  }
 }
 .player-section__container::before {
   content: url("./../../img/leaf_how.png");
